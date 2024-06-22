@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 350px;
+            height: 455px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: transform 1s;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 70px;
+            box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .front {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .front img {
+            width: 100%;
+            border-bottom: 5px solid #ffc3a0;
+        }
+
+        .front h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #ff7b54;
+        }
+
+        .front p {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0 20px;
+        }
+
+        .back {
+            background-color: #fff;
+            text-align: center;
+            transform: rotateY(180deg);
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        .back h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2em;
+            color: #ff7b54;
+            margin: 20px 0;
+        }
+
+        .back p {
+            font-size: 1em;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #777;
+        }
+
+        .instagram-post {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <img> 
+                <h1><u><i><b>Happy Birthday, Ishika..</b></i></u></h1>
+                <p><u><b><h3>Wishing you a day filled with love, joy, and happiness. You are amazing and deserve the best birthday ever!</h3></b></u></p>
+                <img>
+                <p><b><u>↫..Drop a massage for you↫⇠</u></b></p>
+            </div>
+            <div class="back">
+                <h2><u>A Special Message</u></h2>
+                <p><h3><u>Thank you for being such a wonderful person. You bring so much joy and happiness into the lives of everyone around you. Have a fantastic birthday!</u></h3></p>
+                <p class="signature">With love,<br><h2><u>Mr.prince.</u></h2></p>
+                <div class="instagram-post">
+                    <!-- Instagram Embed Code -->
+                    <blockquote class="instagram-media" data-instgrm-permalink=" "></div></div></a></div></blockquote> 
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
